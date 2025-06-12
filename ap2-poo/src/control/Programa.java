@@ -38,7 +38,7 @@ public class Programa {
         cursoJuri.addOrganizador(john1);
 
         Palestra palestra1 = new Palestra("palestra","15-03-2025",6,1000,sala2,palestrante1);
-        Palestra palestra2 = new Palestra("palestra2","09-05-2056",7,2000,auditorio1,palestrante2);
+        Palestra palestra2 = new Palestra("palestra2","09-05-2056",7,2000,sala1,palestrante2);
         palestra1.addOrganizador(Ferrett);
         palestra1.addOrganizador(john1);
 
