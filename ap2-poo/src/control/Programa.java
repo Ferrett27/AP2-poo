@@ -20,6 +20,7 @@ public class Programa {
 
         //Palestrante
         Palestrante palestrante1 = new Palestrante("Pedro","sla50@gmail.com","Havard");
+        Palestrante palestrante2 = new Palestrante("Eduardo","edu@gmail.com","havard");
 
         //Participantes
         Participante participante1 = new Participante("Rodrigo","12132131","sla23813@gmail.com","Ciencia de dados");
@@ -28,21 +29,36 @@ public class Programa {
 
         //Eventos
         Minicursos cursoTech = new Minicursos("O guia da IA","12-02-2027",5,1000,"Livro 5 etc etc", auditorio2);
+        Minicursos cursoJuri = new Minicursos("o Juridico","10-29-2045",2,1000,"Livro juridico tal",auditorio1);
         cursoTech.addOrganizador(john1);
         cursoTech.addInstrutor(instru1);
 
+        cursoJuri.addInstrutor(instru1);
+        cursoJuri.addInstrutor(instru2);
+        cursoJuri.addOrganizador(john1);
+
         Palestra palestra1 = new Palestra("palestra","15-03-2025",6,1000,sala2,palestrante1);
+        Palestra palestra2 = new Palestra("palestra2","09-05-2056",7,2000,auditorio1,palestrante2);
         palestra1.addOrganizador(Ferrett);
         palestra1.addOrganizador(john1);
 
+        palestra2.addOrganizador(Ferrett);
+
         Seminario seminario1 = new Seminario("seminario","03-12-2079","Juridico","Rafael", "professor etc",3,3000,labTech);
+        Seminario seminario2 = new Seminario("seminario2","02-12-2045","tema2","Bernardo","Prof Sla",4,100, labQuim);
         seminario1.addOrganizador(john1);
+        seminario2.addOrganizador(john1);
 
         cursoTech.addParticipantes(participante1);
+        cursoJuri.addParticipantes(participante2);
+
         palestra1.addParticipantes(participante1);
         palestra1.addParticipantes(participante2);
-        seminario1.addParticipantes(participante1);
+        palestra2.addParticipantes(participante2);
 
+        seminario1.addParticipantes(participante1);
+        seminario2.addParticipantes(participante2);
+        seminario2.addParticipantes(participante1);
 
     }
 }
